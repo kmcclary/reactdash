@@ -1,0 +1,16 @@
+Amplify configure
+    region: us-east-1
+    user name: dashboardamplify
+    local AWS profile name: dashboardamplifylocal
+
+Amplify init
+    Project name: datadashboard
+    Environment name: datadev
+
+Amplify add Auth
+    User: dashboardamplify
+
+Amplify add API
+    API name: dataAPI
+    Authorization type: Amazon Cognito User Pool
+    Schema template: single-object with fields
