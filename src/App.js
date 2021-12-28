@@ -6,6 +6,7 @@ import { AmplifySignOut, withAuthenticator } from '@aws-amplify/ui-react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 import Dashboard from './Pages/Dashboard'
+import test1 from './Pages/test';
 
 Amplify.configure(awsconfig);
 
@@ -13,7 +14,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Dashboard}/>
+        <Route path="/t" component={test1}/>
+        <Route path="/test" component={Dashboard}/>
+
       </Switch>
     </Router>
   );
